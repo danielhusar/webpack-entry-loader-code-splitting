@@ -1,6 +1,6 @@
 This is a smallest reproduction case of [entry-loader](https://github.com/eoin/entry-loader) not working with [webpack code splitting](https://webpack.js.org/guides/code-splitting/).
 
-Setup:
+### Setup:
 
 Using yarn:
 
@@ -15,6 +15,8 @@ Using npm:
 npm install
 npm start
 ```
+
+### Issue
 
 When you start a webserver navigate to [http://localhost:9001](http://localhost:9001) and open a console.
 The main entry point is `app/a.js` and dynamic imports works fine inside of it.
