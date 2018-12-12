@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "Chrome": 50,
+        "ChromeAndroid": 50,
+        "Safari": 9,
+        "ie": 11,
+        "Firefox": 47,
+        "iOS": 9
+      },
+      "useBuiltIns": "entry",
+      "loose": true
+    }],
+  ],
+  "plugins": [
+    "syntax-dynamic-import"
+  ]
+}
