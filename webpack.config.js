@@ -3,16 +3,8 @@ const webpack = require("webpack");
 
 module.exports = {
   devServer: {
-    compress: true,
-    host: "0.0.0.0",
-    disableHostCheck: true,
     port: 9001,
-    contentBase: "./public",
-    watchOptions: {
-      poll: 2000,
-      aggregateTimeout: 300,
-      ignored: /node_modules/
-    }
+    contentBase: "./public"
   },
   entry: {
     a: ["./app/a.js"]
@@ -29,10 +21,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader",
-            options: {
-              cacheDirectory: true
-            }
+            loader: "babel-loader"
           }
         ]
       }
