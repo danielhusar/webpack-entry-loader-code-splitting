@@ -17,8 +17,8 @@ npm start
 ```
 
 When you start a webserver navigate to [http://localhost:9001](http://localhost:9001) and open a console.
-The main entry point to the app is `a.js` and dynamic imports works fine inside the a.js.
-But a.js loads b.js via `entry-loader` and all dynamic imports inside of `b.js` would throw error:
+The main entry point is `app/a.js` and dynamic imports works fine inside of it.
+But `app/a.js` loads `app/b.js` via `entry-loader` and all dynamic imports inside of `app/b.js` would throw error:
 
 ```js
 bootstrap:19 Uncaught (in promise) TypeError: Cannot read property 'call' of undefined
