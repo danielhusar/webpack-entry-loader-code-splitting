@@ -1,4 +1,4 @@
-This is a smallest reproduction case of [entry-loader](https://github.com/eoin/entry-loader) not working with [webpack code splitting](https://webpack.js.org/guides/code-splitting/).
+This is the smallest reproduction case of [entry-loader](https://github.com/eoin/entry-loader) not working with [webpack code splitting](https://webpack.js.org/guides/code-splitting/).
 
 ### Setup:
 
